@@ -35,7 +35,6 @@ body {
   width: 350px;
   height: 100%;
   padding-left: 23px;
-  padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
@@ -43,33 +42,14 @@ body {
   color: #333333;
 }
 
-.search__button {
+.search_button {
   position: absolute;
+  width: 185px;
+  height: 100%;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 65px;
   border: none;
   background-color: #EC1F46;
-}
-
-.user {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.user__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.user__name {
-  font-size: 14px;
-  line-height: 18px;
-  color: #333333;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
