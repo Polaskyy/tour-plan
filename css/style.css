@@ -13,7 +13,7 @@ body {
   margin: auto;
 }
 
-.img {
+img {
   max-width: 100%;
 }
 
@@ -482,7 +482,7 @@ template {
 }
 
 .hotel {
-  padding: 23px 70px;
+  padding: 23px 0;
 }
 
 .hotel-about__left {
@@ -560,6 +560,10 @@ template {
   margin-bottom: 5px;
 }
 
+.five {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -594,11 +598,14 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-wrapper {
+    width: 100%;
+  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -629,15 +636,16 @@ template {
     margin-left: 0;
   }
   .hotel-information__name {
+    flex-basis: 100%;
     margin-top: 10px;
-    width: auto;
+    flex-basis: 100%;
   }
   .hotel-wrapper {
     justify-content: space-between;
     width: 100%;
   }
   .stars {
-    flex-basis: 50%;
+    flex-basis: auto;
     right: 0;
   }
 }

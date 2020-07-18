@@ -23,15 +23,17 @@
   .search
     &__input
       width: 340px
+  .hotel
+    &-wrapper
+      width: 100%
   
-@media ( max-width:760px)
+@media ( max-width:768px)
   .container
-    max-width: 768px
+    max-width: 576px
     width: 92%
   .navbar
     &__search, &-menu, &__user
       display: none
-    
   .menu
     &-button 
       display: flex
@@ -57,16 +59,15 @@
         order: -1
         margin-left: 0
       &__name
+        flex-basis: 100%
         margin-top: 10px
-        width: auto
+        flex-basis: 100%
     &-wrapper
       justify-content: space-between
       width: 100%
-   
   .stars
-    flex-basis: 50%
+    flex-basis: auto
     right: 0
-
 @media ( max-width: 576px )
   .logo
     width: 99px
