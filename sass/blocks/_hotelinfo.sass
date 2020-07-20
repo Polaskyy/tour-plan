@@ -58,12 +58,13 @@
   margin-bottom: 5px
 .five
   font-size: 10px
+
+
 .swiper-container 
   width: 100%
   height: 450px
   position: relative
   border-radius: 8px
-  object-fit: cover
   &:after 
     content: ''
     position: absolute
@@ -75,8 +76,17 @@
     right: 0
     background: linear-gradient(180deg,rgba(0, 122, 223, 0.48) 0%,rgba(255, 255, 255, 0.128) 100%)
     z-index: 10
+.swiper-slide
+  z-index: 10
+  width: 728px
+  &__image
+    height: 100%
+    width: 100%
+
 .slider
   width: 728px
+  
+
   &-button 
     position: absolute
     top: 50%
