@@ -171,58 +171,60 @@
         </div>
         <!-- /.hotel-about__left -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/Bali.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/Dubai.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/bedroom.jpg"
-                    alt="slide"
-                  />
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/Dominikana.jpg"
-                    alt="slide"
-                  />
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/Egypt.jpg"
-                    alt="slide"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/Bali.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/Dubai.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/bedroom.jpg"
+                  alt="slide"
+                />
               </div>
 
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/Dominikana.jpg"
+                  alt="slide"
+                />
+              </div>
+
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/Egypt.jpg"
+                  alt="slide"
+                />
+              </div>
             </div>
-            <!-- /.swiper-container -->
+
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider -->
+          <!-- /.swiper-container -->
+
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -284,7 +286,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel-info -->
-    <div class="newsletter">
+    <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -302,8 +304,153 @@
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
-    </div>
+    </section>
     <!-- /.newsletter -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">What people thinks about us</h2>
+
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/review-avatar.jpg"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/Jakie Chan.jpg"
+                    alt="Photo: Jakie Chan"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Jakie Chan</h3>
+                  <span class="reviews-slider__date">Stayed 01 June, 2018</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/Jhony Pitt.jpg"
+                    alt="Photo: Jhony Pitt"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Jhony Pitt</h3>
+                  <span class="reviews-slider__date">Stayed 11 Sept, 2020</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci ipsam quidem iure rerum? Sit nam maiores fugit?
+                  Optio, assumenda odio perspiciatis magnam inventore hic
+                  provident quos aliquam quia praesentium veniam.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/Eleonor Rigby.jpg"
+                    alt="Photo: Eleonor Rigby"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Eleonor Rigby</h3>
+                  <span class="reviews-slider__date">Stayed 15 Aug, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff Далеко-далеко
+                  за словесными горами в стране гласных и согласных, живут
+                  рыбные тексты. Коварный, свою не он даль напоивший свой назад
+                  города. Путь журчит щеке семантика родного океана над рукописи
+                  коварных бросил они!
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!-- /.reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
