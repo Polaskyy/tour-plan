@@ -11,7 +11,7 @@
   .mini
     display: none
 @media ( max-width:992px  )
-  .container
+  .container, .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -44,7 +44,7 @@
   .slider
     width: 100%
   .map
-    width: 340px
+    width: 347px
 @media ( max-width:768px)
   .container
     max-width: 576px
@@ -95,6 +95,12 @@
   .stars
     flex-basis: auto
     right: 0
+  .newsletter
+    &-wrapper 
+      flex-direction: column
+      max-width: 576px
+      width: 92%
+      align-items: flex-start
   
 @media ( max-width: 576px )
   .logo
@@ -104,6 +110,28 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+@media ( max-width: 375px )
+  .slider
+    max-height: 179px
+  .newsletter
+    padding-top: 106px
+    
+    &__title
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+    &-title
+      &__strong
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+    &__subscribe
+      width: 100%
+  
 /* ( max-width: 320px)
  .container
  width: 90%
