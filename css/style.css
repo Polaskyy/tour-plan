@@ -833,6 +833,11 @@ template {
   line-height: 15px;
 }
 
+.parallax-window {
+  min-height: 100%;
+  background: transparent;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
