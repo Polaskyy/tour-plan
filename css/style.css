@@ -971,7 +971,7 @@ template {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 57px;
+  margin-bottom: 37px;
 }
 
 .activities-wrapper {
@@ -1117,7 +1117,10 @@ template {
   .card {
     width: 339px;
     height: 255px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .card__title {
+    padding-right: 80px;
   }
 }
 
@@ -1212,6 +1215,9 @@ template {
     width: 49%;
     height: 255px;
   }
+  .card__title {
+    padding-right: 25px;
+  }
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -1241,6 +1247,18 @@ template {
     font-size: 18px;
     line-height: 23px;
   }
+  .card__title {
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 525px) {
+  .card {
+    width: 100%;
+  }
+  .card__image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1265,6 +1283,9 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .card__title {
+    padding-right: 125px;
   }
 }
 
