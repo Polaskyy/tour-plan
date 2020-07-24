@@ -947,6 +947,8 @@ template {
 .reviews-slider__rating {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 48px;
 }
 
 .reviews-slider__text {
@@ -1202,6 +1204,10 @@ template {
     transform: translate(50%, 0);
     margin-right: -65px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .card {
     width: 49%;
     height: 255px;
@@ -1227,6 +1233,13 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+  }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
