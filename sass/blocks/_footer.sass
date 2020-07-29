@@ -5,7 +5,7 @@
   padding-bottom: 44px
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: repeat(4, minmax(max-content, 1fr))
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
@@ -16,13 +16,21 @@
      
   &__categories
     grid-row: 1 / 4
+    font-weight: bold
+    font-size: 18px
+  &__legal
+    margin-left: 60px
+    font-weight: bold
+    font-size: 18px
+  &__additional
+    font-weight: bold
+    font-size: 14px
   &__social
     &-links
       display: flex
       align-items: center
       min-width: 83px
       justify-content: space-between
-
     &-network
       display: flex
       align-items: start
@@ -38,8 +46,6 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
-   
-    
   &__ul
     padding: 0
     margin: 0
@@ -129,6 +135,11 @@
       display: flex
       justify-content: space-between
       margin-top: 92px
+  &__item
+    &-link
+      text-decoration: none
+      color: $light
+      
  
       
       
