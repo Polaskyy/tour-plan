@@ -1888,6 +1888,9 @@ template {
   .slider {
     max-height: 179px;
   }
+  .navbar__search--mobile--visible {
+    width: 245px;
+  }
   .newsletter {
     padding-top: 106px;
   }
