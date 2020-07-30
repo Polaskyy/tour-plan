@@ -1056,7 +1056,7 @@ template {
 
 .packages__infocard__left {
   position: relative;
-  max-height: 500px;
+  height: 100px;
 }
 
 .packages__infocard__left-title {
@@ -1575,7 +1575,7 @@ template {
     margin-top: 10px;
   }
   .infocard__big-photo {
-    min-width: 366px;
+    min-width: 346px;
   }
 }
 
@@ -1785,6 +1785,9 @@ template {
   }
   .packages__infocard__right {
     border-radius: 0px 0px 8px 0px;
+  }
+  .packages__infocard__left {
+    height: 450px;
   }
   .infocard__big-photo {
     width: 100%;
