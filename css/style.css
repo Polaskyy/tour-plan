@@ -396,6 +396,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -1580,8 +1584,46 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 24px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     display: flex;
@@ -1599,6 +1641,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 15px;
   }
   .hotel-info__rating {
     display: none;
