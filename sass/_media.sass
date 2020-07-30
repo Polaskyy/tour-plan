@@ -18,6 +18,16 @@
       flex-basis: 100%
   .mini
     display: none
+  .packages
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(2, minmax(min-content, 1fr))
+      grid-gap: 30px
+      grid-auto-rows: minmax(40px, min-content)
+  .infocard
+    &__big
+      &-photo
+        min-width: 475px
 @media ( max-width:992px  )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -109,6 +119,15 @@
       &-list
         padding-left: 0
         min-width: 280px
+  .packages
+    &__infocard
+      &__button
+        margin-top: 10px
+  .infocard
+    &__big
+      &-photo
+        min-width: 366px     
+
 
 @media ( max-width:768px)
   .container
@@ -237,6 +256,25 @@
         grid-template-rows: repeat(2, 1fr)
     &__pay
       grid-row: 2
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-column-gap: 0
+      margin: 0
+    &__infocard
+      grid-column: 1
+      flex-direction: column
+      &__right
+        border-radius: 0px 0px 8px 0px
+  .infocard
+    &__big
+      &-photo
+        width: 100%
+        height: 100%
+        object-fit: cover
+        overflow: hidden
+        border-radius: 8px 8px 0 0
+
     
 @media ( max-width: 576px )
   .logo
@@ -304,6 +342,9 @@
       grid-row: 2
     &__input
       flex-basis: 100%
+  .packages
+    &__infocard
+      border-radius: 8px 8px 0px 8px
 @media ( max-width: 375px )
   .slider
     max-height: 179px
@@ -342,6 +383,10 @@
       margin-top: 15px
     &__message
       columns: 20
+  .packages
+    &__title
+      font-size: 30px
+      text-align: start
   
 /* ( max-width: 320px)
  .container
