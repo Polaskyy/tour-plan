@@ -38,22 +38,9 @@ try {
     $mail->setFrom('rraskarov@gmail.com', 'Оскар Полански'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('askarov_r@mail.ru');
+    $mail->addAddress('rraskarov@yandex.ru');
     $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
-    // Прикрипление файлов к письму
-    if (!empty($file['name'][0])) {
-        for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-            $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-            $filename = $file['name'][$ct];
-            if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-                $mail->addAttachment($uploadfile, $filename);
-                $rfile[] = "Файл $filename прикреплён";
-            } else {
-                $rfile[] = "Не удалось прикрепить файл $filename";
-            }
-        }
-    }
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
@@ -71,8 +58,10 @@ try {
 }
 
 // Отображение результата
-echo json_encode([
+/*echo json_encode([
     'result' => $result,
     'resultfile' => $rfile,
     'status' => $status,
-]);
+]);*/
+
+header('location: thankyou.html');
