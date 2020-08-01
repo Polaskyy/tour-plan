@@ -34,7 +34,7 @@ try {
     $mail->Username = 'rraskarov@gmail.com'; // Логин на почте
     $mail->Password = '91h8IKC3V'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port = 456;
+    $mail->Port = 465;
     $mail->setFrom('rraskarov@gmail.com', 'Оскар Полански'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
