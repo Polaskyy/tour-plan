@@ -1052,12 +1052,12 @@ template {
   grid-auto-rows: minmax(40px, min-content);
 }
 
-.packages__infocard__left {
+.packages__infocard-left {
   position: relative;
   height: 100px;
 }
 
-.packages__infocard__left-title {
+.packages__infocard-left--title {
   position: absolute;
   z-index: 2;
   left: 0;
@@ -1072,7 +1072,7 @@ template {
   border-radius: 0px 4px 4px 0px;
 }
 
-.packages__infocard__right {
+.packages__infocard-right {
   background-color: #0A223D;
   color: #fff;
   border-radius: 0px 8px 8px 0px;
@@ -1112,14 +1112,14 @@ template {
   border-radius: 8px 0px 0px 8px;
 }
 
-.packages__infocard__list {
+.packages__infocard-list {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 37px;
 }
 
-.packages__infocard__item {
+.packages__infocard-item {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1127,7 +1127,7 @@ template {
   margin-bottom: 8px;
 }
 
-.packages__infocard__button {
+.packages__infocard-button {
   padding: 11px 27px;
   background-color: #EC1F46;
   color: #fff;
@@ -1210,7 +1210,7 @@ template {
   padding: 30px 21px 25px 32px;
 }
 
-.infocard__bottom__title {
+.infocard__bottom-title {
   margin: 0;
   font-style: normal;
   font-weight: bold;
@@ -1568,7 +1568,7 @@ template {
     padding-left: 0;
     min-width: 280px;
   }
-  .packages__infocard__button {
+  .packages__infocard-button {
     margin-top: 10px;
   }
   .infocard__big-photo {
@@ -1714,6 +1714,12 @@ template {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  .packages__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
   .footer {
     padding-top: 73px;
   }
@@ -1777,10 +1783,10 @@ template {
     grid-column: 1;
     flex-direction: column;
   }
-  .packages__infocard__right {
+  .packages__infocard-right {
     border-radius: 0px 0px 8px 0px;
   }
-  .packages__infocard__left {
+  .packages__infocard-left {
     height: 250px;
   }
   .infocard__big-photo {
