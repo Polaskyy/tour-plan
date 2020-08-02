@@ -563,6 +563,7 @@ template {
 
 .hotel-slider {
   width: 728px;
+  height: 450px;
 }
 
 .hotel-slider__item {
@@ -748,11 +749,11 @@ template {
 
 .booking__iframe {
   border: none;
+  display: none;
 }
 
-.map {
-  width: 100%;
-  height: 213px;
+.mymap {
+  min-height: 213px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1433,6 +1434,9 @@ template {
   .slider {
     /*width: 590px */
   }
+  .hotel-slider {
+    height: 450px;
+  }
   .hotel-slider__image {
     object-fit: cover;
   }
@@ -1547,8 +1551,8 @@ template {
   .booking {
     width: 340px;
   }
-  .map {
-    width: 347px;
+  .mymap {
+    width: 340px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1667,7 +1671,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  .mymap {
     width: 100%;
   }
   .stars {

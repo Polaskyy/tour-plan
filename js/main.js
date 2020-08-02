@@ -33,15 +33,17 @@ menuButton.addEventListener('click', function () {
     .querySelector('.navbar-bottom')
     .classList.toggle('navbar-bottom--visible')
 })
-ymaps.ready({
-  // successCallback будет вызван, когда загрузятся API и модуль "myModule1".
-  require: ['myModule1'],
-  successCallback: function (ym) {
-    var map = new ymaps.Map('map', {
-      center: [55.75, 37.62],
-      zoom: 11,
-    })
-    var obj = new ymaps.myModule1()
-    // ...
-  },
-})
+ymaps.ready(init)
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map('mymap', {
+    // Координаты центра карты.
+    // Порядок по умолчанию: «широта, долгота».
+    // Чтобы не определять координаты центра карты вручную,
+    // воспользуйтесь инструментом Определение координат.
+    center: [-8.8367, 115.152],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+    zoom: 7,
+  })
+}
