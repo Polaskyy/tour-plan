@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e84d10e4-eaee-4948-89c4-967a45def426&lang=ru_RU"></script>
     <title>Best Tour plan - Hotel booking</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
@@ -309,10 +310,9 @@
             <!-- /.booking -->
             <div class="map">
               <iframe
+                width="100%"
+                height="213px"
                 class="booking__iframe"
-                src="https://api-maps.yandex.ru/2.1/e84d10e4-eaee-4948-89c4-967a45def426&load=package.full&lang=ru_RU"
-                style="width: 100%;"
-                height="213"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
@@ -562,11 +562,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">
             Send

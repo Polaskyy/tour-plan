@@ -33,3 +33,15 @@ menuButton.addEventListener('click', function () {
     .querySelector('.navbar-bottom')
     .classList.toggle('navbar-bottom--visible')
 })
+ymaps.ready({
+  // successCallback будет вызван, когда загрузятся API и модуль "myModule1".
+  require: ['myModule1'],
+  successCallback: function (ym) {
+    var map = new ymaps.Map('map', {
+      center: [55.75, 37.62],
+      zoom: 11,
+    })
+    var obj = new ymaps.myModule1()
+    // ...
+  },
+})
