@@ -26,28 +26,6 @@ img {
   height: 50px;
 }
 
-.message {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
-}
-
-.button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  background-color: #EC1F46;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1088,7 +1066,7 @@ template {
   height: 100px;
 }
 
-.packages__infocard-left__main-title {
+.packages__infocard-left--title {
   position: absolute;
   z-index: 2;
   left: 0;
@@ -1119,39 +1097,6 @@ template {
   align-items: center;
 }
 
-.packages__infocard-list {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 37px;
-}
-
-.packages__infocard-list__mini-item {
-  margin-right: 14px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.packages__infocard-small__bottom-half {
-  padding: 30px 21px 25px 32px;
-}
-
-.packages__infocard-small__top-title {
-  position: absolute;
-  left: 0;
-  top: 26px;
-  background-color: #EC1F46;
-  color: #fff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  padding: 4px 9px;
-  border-radius: 0 4px 4px 0;
-}
-
 .packages__new-price {
   display: inline-block;
   width: 55%;
@@ -1176,6 +1121,13 @@ template {
   border-radius: 8px 0px 0px 8px;
 }
 
+.packages__infocard-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
 .packages__infocard-item {
   font-style: normal;
   font-weight: normal;
@@ -1196,31 +1148,11 @@ template {
   line-height: 19px;
 }
 
-.packages__infocard-left__big-photo {
-  min-width: 366px;
-}
-
-.packages__infocard-right__top-rating {
-  min-width: 48px;
-}
-
 .packages__infocard-small {
   background-color: #0A223D;
   border-radius: 8px 8px 6px 6px;
   border: none;
   color: #fff;
-}
-
-.packages__infocard-small__top-photo {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-}
-
-.packages__infocard-small__top-half {
-  position: relative;
 }
 
 .packages__old-price {
@@ -1241,7 +1173,19 @@ template {
   line-height: 30px;
 }
 
-.packages__text {
+.infocard__rating {
+  min-width: 48px;
+}
+
+.infocard__title {
+  margin: 5px 0 0 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.infocard__text {
   width: 100%;
   font-style: normal;
   font-weight: normal;
@@ -1251,20 +1195,31 @@ template {
   margin-bottom: 54px;
 }
 
-.packages__big-title {
-  margin: 5px 0 0 0;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  margin-bottom: 23px;
+.infocard__item-icon {
+  margin-right: 14px;
 }
 
-.packages__top {
+.infocard__top {
   position: relative;
 }
 
-.packages__top-title {
+.infocard__top-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.infocard__big-photo {
+  min-width: 366px;
+}
+
+.infocard__bottom {
+  padding: 30px 21px 25px 32px;
+}
+
+.infocard__bottom-title {
   margin: 0;
   font-style: normal;
   font-weight: bold;
@@ -1273,8 +1228,18 @@ template {
   margin-bottom: 23px;
 }
 
-.packages__top__bottom-half {
-  padding: 30px 32px;
+.hotel-view__title {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer {
@@ -1401,8 +1366,26 @@ template {
 }
 
 .footer__message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
+}
+
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .footer__info {
@@ -1455,14 +1438,6 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0,2s;
-}
-
-.modal__overlay--visible {
-  visibility: visible;
-  opacity: 1;
 }
 
 .modal__dialog {
@@ -1476,14 +1451,6 @@ template {
   color: #fff;
   border-radius: 8px;
   z-index: 101;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0,2s;
-}
-
-.modal__dialog--visible {
-  visibility: visible;
-  opacity: 1;
 }
 
 .modal__close {
@@ -1491,35 +1458,6 @@ template {
   right: 18px;
   top: 17px;
   cursor: pointer;
-}
-
-.modal__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.modal__input {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.modal__message {
-  width: 100%;
-  min-height: 123px;
-  margin-bottom: 15px;
-}
-
-.modal__info {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
@@ -1551,7 +1489,7 @@ template {
     grid-gap: 30px;
     grid-auto-rows: minmax(40px, min-content);
   }
-  .packages__infocard-left__big-photo {
+  .infocard__big-photo {
     min-width: 475px;
   }
 }
@@ -1670,7 +1608,7 @@ template {
   .packages__infocard-button {
     margin-top: 10px;
   }
-  .packages__infocard-left__big-photo {
+  .infocard__big-photo {
     min-width: 346px;
   }
 }
@@ -1765,7 +1703,6 @@ template {
   }
   .booking {
     width: 100%;
-    margin-bottom: 15px;
   }
   .mymap {
     width: 100%;
@@ -1889,7 +1826,7 @@ template {
   .packages__infocard-left {
     height: 250px;
   }
-  .packages__infocard-left__big-photo {
+  .infocard__big-photo {
     width: 100%;
     height: 250px;
     object-fit: cover;

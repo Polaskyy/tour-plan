@@ -10,20 +10,20 @@
     &-left
       position: relative
       height: 100px
-      
-      &--title
-        position: absolute
-        z-index: 2
-        left: 0
-        background-color: $primary
-        top: 26px
-        color: $light
-        font-style: normal
-        font-weight: 600
-        font-size: 12px
-        line-height: 15px
-        padding: 8px 11px
-        border-radius: 0px 4px 4px 0px
+      &__main
+        &-title
+          position: absolute
+          z-index: 2
+          left: 0
+          background-color: $primary
+          top: 26px
+          color: $light
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 15px
+          padding: 8px 11px
+          border-radius: 0px 4px 4px 0px
     &-right
       background-color: $dark
       color: $light
@@ -36,6 +36,35 @@
       justify-content: space-between
       flex-wrap: wrap
       align-items: center
+    &-list
+      list-style-type: none
+      padding: 0
+      margin-top: 0
+      margin-bottom: 37px
+      &__mini
+        &-item
+          margin-right: 14px
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 15px
+    &-small
+      &__bottom
+        &-half
+          padding: 30px 21px 25px 32px
+      &__top
+        &-title
+          position: absolute
+          left: 0
+          top: 26px
+          background-color: $primary
+          color: $light
+          font-style: normal
+          font-weight: 600
+          font-size: 8px
+          line-height: 10px
+          padding: 4px 9px
+          border-radius: 0 4px 4px 0
   &__new
     &-price
       display: inline-block
@@ -56,11 +85,7 @@
     object-fit: cover
     overflow: hidden
     border-radius: 8px 0px 0px 8px;
-    &-list
-      list-style-type: none
-      padding: 0
-      margin-top: 0
-      margin-bottom: 37px
+    
     &-item
       font-style: normal
       font-weight: normal
@@ -73,19 +98,33 @@
       color: $light
       border-radius: 4px
       border: none
-      
       font-style: normal
       font-weight: 600
       font-size: 14px
       line-height: 19px
+    &-left
+      &__big
+        &-photo
+          min-width: 366px
+    &-right
+      &__top
+        &-rating
+          min-width: 48px
     &-small
       background-color: $dark
       border-radius: 8px 8px 6px 6px
       border: none
       color: $light
-    
-    
-
+      &__top
+        &-photo
+          width: 100%
+          height: 250px
+          object-fit: cover
+          overflow: hidden
+          border-radius: 8px 8px 0 0
+      &__top
+        &-half
+          position: relative
   &__old
     &-price
       display: inline-block
@@ -102,17 +141,6 @@
       font-weight: bold
       font-size: 24px
       line-height: 30px
-  
-      
-.infocard
-  &__rating
-    min-width: 48px
-  &__title
-    margin: 5px 0 0 0 
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 23px
   &__text
     width: 100%
     font-style: normal
@@ -121,23 +149,19 @@
     line-height: 160.6%
     margin-top: 27px
     margin-bottom: 54px
-  &__item
-    &-icon
-      margin-right: 14px
+  &__big
+    &-title
+      margin: 5px 0 0 0
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 23px
   &__top
     position: relative
-  &__top
-    &-photo
-      width: 100%
-      height: 250px
-      object-fit: cover
-      overflow: hidden
-      border-radius: 8px 8px 0 0
-  &__big
-    &-photo
-      min-width: 366px
-  &__bottom
-    padding: 30px 21px 25px 32px
+  
+  
+  
     &-title
       margin: 0
       font-style: normal
@@ -145,20 +169,9 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 23px
-.hotel
-  &-view
-    &__title
-      position: absolute
-      left: 0
-      top: 26px
-      background-color: $primary
-      color: $light
-      font-style: normal
-      font-weight: 600
-      font-size: 8px
-      line-height: 10px
-      padding: 4px 9px
-      border-radius: 0 4px 4px 0
+    &__bottom
+      &-half
+        padding: 30px 32px
       
 
       
