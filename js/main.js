@@ -31,20 +31,44 @@ $(document).ready(function () {
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
-  ymaps.ready(init);
-  function init() {
+  ymaps.ready(function () {
     // Создание карты.
     var myMap = new ymaps.Map("mymap", {
-      // Координаты центра карты.
-      // Порядок по умолчанию: «широта, долгота».
-      // Чтобы не определять координаты центра карты вручную,
-      // воспользуйтесь инструментом Определение координат.
-      center: [-8.8367, 115.152],
-      // Уровень масштабирования. Допустимые значения:
-      // от 0 (весь мир) до 19.
-      zoom: 7,
-    });
-  }
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [-8.8367, 115.152],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 7,
+      }),
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+      myPlacemark = new ymaps.Placemark(
+        myMap.getCenter(),
+        {
+          hintContent: "Hilton bali resort",
+          balloonContent: "Hilton bali resort",
+        },
+        {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: "default#image",
+          // Своё изображение иконки метки.
+          iconImageHref: "img/pointer.png",
+          // Размеры метки.
+          iconImageSize: [30, 42],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38],
+        }
+      );
+
+    myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+  });
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
