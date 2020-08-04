@@ -32,14 +32,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username = 'rraskarov@gmail.com'; // Логин на почте
-    $mail->Password = '91h8IKC3V'; // Пароль на почте
+    $mail->Username = 'askarov.rrr@gmail.com'; // Логин на почте
+    $mail->Password = '7h8IKC3V'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('rraskarov@gmail.com', 'Оскар Полански'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('askarov.rrr@gmail.com', 'рус аскаров'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('OPolansky@yandex.ru');
+    $mail->addAddress('rraskarov@yandex.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);
