@@ -41,7 +41,7 @@ $(document).ready(function () {
         center: [-8.8367, 115.152],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 7,
+        zoom: 13,
       }),
       // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -52,18 +52,21 @@ $(document).ready(function () {
         {
           hintContent: "Hilton bali resort",
           balloonContent: "Hilton bali resort",
+          iconContent: "Hilton Bali resort",
         },
         {
           // Опции.
           // Необходимо указать данный тип макета.
-          iconLayout: "default#image",
+          iconLayout: "default#imageWithContent",
+
           // Своё изображение иконки метки.
           iconImageHref: "img/pointer.png",
           // Размеры метки.
-          iconImageSize: [30, 42],
+          iconImageSize: [30, 32],
           // Смещение левого верхнего угла иконки относительно
           // её "ножки" (точки привязки).
           iconImageOffset: [-5, -38],
+          iconContentOffset: [5, 30],
         }
       );
 

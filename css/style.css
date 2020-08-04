@@ -1088,6 +1088,10 @@ template {
   height: 100px;
 }
 
+.packages__infocard-left__big-photo {
+  min-width: 366px;
+}
+
 .packages__infocard-left__main-title {
   position: absolute;
   z-index: 2;
@@ -1194,10 +1198,6 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-}
-
-.packages__infocard-left__big-photo {
-  min-width: 366px;
 }
 
 .packages__infocard-right__top-rating {

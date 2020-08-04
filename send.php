@@ -39,7 +39,7 @@ try {
     $mail->setFrom('rraskarov@gmail.com', 'Оскар Полански'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('rraskarov@yandex.ru');
+    $mail->addAddress('OPolansky@yandex.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);

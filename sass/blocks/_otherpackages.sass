@@ -10,6 +10,9 @@
     &-left
       position: relative
       height: 100px
+      &__big
+        &-photo
+          min-width: 366px
       &__main
         &-title
           position: absolute
@@ -24,6 +27,8 @@
           line-height: 15px
           padding: 8px 11px
           border-radius: 0px 4px 4px 0px
+      
+        
     &-right
       background-color: $dark
       color: $light
@@ -102,10 +107,7 @@
       font-weight: 600
       font-size: 14px
       line-height: 19px
-    &-left
-      &__big
-        &-photo
-          min-width: 366px
+    
     &-right
       &__top
         &-rating
@@ -159,9 +161,6 @@
       margin-bottom: 23px
   &__top
     position: relative
-  
-  
-  
     &-title
       margin: 0
       font-style: normal
