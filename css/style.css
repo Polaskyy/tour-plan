@@ -6,7 +6,7 @@
 body {
   font-family: 'Muli', sans-serif;
   color: #333333;
-  background-color: #F5FAFE;
+  background-color: #f5fafe;
 }
 
 .container {
@@ -41,7 +41,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -237,9 +237,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -247,9 +247,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -258,9 +258,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -310,8 +310,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -321,8 +321,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -330,7 +330,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -340,7 +340,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -388,7 +388,7 @@ template {
 }
 
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .navbar-top {
@@ -431,7 +431,7 @@ template {
 }
 
 .navbar-bottom {
-  background-color: #0A223D;
+  background-color: #0a223d;
 }
 
 .mini {
@@ -455,7 +455,7 @@ template {
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
-  background-color: #F5FAFE;
+  background-color: #f5fafe;
   border: none;
   font-size: 12px;
   line-height: 15px;
@@ -469,7 +469,7 @@ template {
   height: 100%;
   width: 65px;
   border: none;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
 }
 
 .user {
@@ -538,7 +538,7 @@ template {
   line-height: 13px;
   width: 70px;
   margin-left: 14px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   padding: 4px 9px;
   color: #fff;
   border-radius: 3px;
@@ -576,7 +576,7 @@ template {
   min-height: 45px;
   padding: 9px 6px;
   border-radius: 4px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   color: #fff;
 }
 
@@ -612,7 +612,11 @@ template {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 122, 223, 0.48) 0%,
+    rgba(255, 255, 255, 0.128) 100%
+  );
   z-index: 10;
 }
 
@@ -681,7 +685,7 @@ template {
 }
 
 .booking {
-  background-color: #0A223D;
+  background-color: #0a223d;
   color: #fff;
   width: 350px;
   min-height: 210px;
@@ -771,7 +775,7 @@ template {
   font-size: 14px;
   line-height: 19px;
   border-radius: 4px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -859,7 +863,7 @@ template {
   right: 0;
   height: 100%;
   min-width: 65px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   border: none;
   color: #fff;
   font-weight: bold;
@@ -891,7 +895,7 @@ template {
   align-items: center;
   max-width: 730px;
   margin: 45px auto 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
   margin-top: 45px;
   padding: 0 62px 30px;
@@ -966,7 +970,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #EC1F46;
+  color: #ec1f46;
   margin-bottom: 10px;
 }
 
@@ -1033,7 +1037,11 @@ template {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: linear-gradient(
+    179.83deg,
+    rgba(196, 196, 196, 0) 35.34%,
+    #0a223d 99.85%
+  );
   z-index: -1;
 }
 
@@ -1065,7 +1073,7 @@ template {
   line-height: 16px;
   color: #fff;
   padding: 7px 22px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1096,7 +1104,7 @@ template {
   position: absolute;
   z-index: 2;
   left: 0;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   top: 26px;
   color: #fff;
   font-style: normal;
@@ -1108,7 +1116,7 @@ template {
 }
 
 .packages__infocard-right {
-  background-color: #0A223D;
+  background-color: #0a223d;
   color: #fff;
   border-radius: 0px 8px 8px 0px;
   border: none;
@@ -1146,7 +1154,7 @@ template {
   position: absolute;
   left: 0;
   top: 26px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   color: #fff;
   font-style: normal;
   font-weight: 600;
@@ -1190,7 +1198,7 @@ template {
 
 .packages__infocard-button {
   padding: 11px 27px;
-  background-color: #EC1F46;
+  background-color: #ec1f46;
   color: #fff;
   border-radius: 4px;
   border: none;
@@ -1205,7 +1213,7 @@ template {
 }
 
 .packages__infocard-small {
-  background-color: #0A223D;
+  background-color: #0a223d;
   border-radius: 8px 8px 6px 6px;
   border: none;
   color: #fff;
@@ -1278,7 +1286,7 @@ template {
 }
 
 .footer {
-  background-color: #0A223D;
+  background-color: #0a223d;
   color: #fff;
   padding-top: 108px;
   padding-bottom: 44px;
@@ -1357,7 +1365,7 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .footer__item--mb-2 {
@@ -1369,7 +1377,7 @@ template {
 }
 
 .footer__text {
-  color: #BDBDBD;
+  color: #bdbdbd;
   margin-bottom: 22px;
 }
 
@@ -1410,7 +1418,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .footer__policy {
@@ -1457,7 +1465,7 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0,2s;
+  transition: opacity 0, 2s;
 }
 
 .modal__overlay--visible {
@@ -1471,14 +1479,14 @@ template {
   top: 50%;
   left: 50%;
   padding: 33px 88px;
-  background-color: #0A223D;
+  background-color: #0a223d;
   transform: translate(-50%, -50%);
   color: #fff;
   border-radius: 8px;
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0,2s;
+  transition: opacity 0, 2s;
 }
 
 .modal__dialog--visible {
@@ -1519,16 +1527,14 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
-  .slider {
-    /*width: 590px */
-  }
+
   .hotel-slider {
     height: 450px;
   }
@@ -1557,7 +1563,8 @@ template {
 }
 
 @media (max-width: 992px) {
-  .container, .newsletter-wrapper {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -1673,6 +1680,10 @@ template {
   .packages__infocard-left__big-photo {
     min-width: 346px;
   }
+  .modal__dialog--visible {
+    max-width: 390px;
+    padding: 10px 23px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1690,10 +1701,12 @@ template {
     right: 0;
     z-index: 99;
   }
-  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
+  .navbar__user--mobile--hidden,
+  .navbar__search--mobile--hidden {
     display: none;
   }
-  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+  .navbar__user--mobile--visible,
+  .navbar__search--mobile--visible {
     display: flex;
   }
   .navbar__user {
@@ -1783,7 +1796,8 @@ template {
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
-  .reviews-slider__item:after, .reviews-slider__item:before {
+  .reviews-slider__item:after,
+  .reviews-slider__item:before {
     display: none;
   }
   .reviews-slider__button {
@@ -1984,6 +1998,10 @@ template {
   }
   .packages__infocard {
     border-radius: 8px 8px 0px 8px;
+  }
+  .modal__dialog--visible {
+    width: 80%;
+    padding: 10px 23px;
   }
 }
 
