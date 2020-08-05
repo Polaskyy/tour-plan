@@ -1463,6 +1463,10 @@ template {
   color: #fff;
 }
 
+.modal {
+  overflow-x: auto;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1702,6 +1706,7 @@ template {
   .modal__dialog--visible {
     width: 420px;
     padding: 20px 23px;
+    overflow-x: auto;
   }
 }
 
@@ -2018,6 +2023,8 @@ template {
   .modal__dialog--visible {
     width: 90%;
     padding: 20px 23px;
+    overflow-y: auto;
+    height: 100%;
   }
   .modal__button {
     order: 1;
