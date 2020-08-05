@@ -1,8 +1,7 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
-  .slider
-    /*width: 590px
+  
   .hotel
     &-slider
       height: 450px
@@ -13,7 +12,8 @@
     width: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .mini
     display: none
   .packages
@@ -49,7 +49,8 @@
       grid-template-columns: repeat(12, minmax(max-content, 1fr))
       grid-row-gap: 15px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       grid-row: 1 / 2
       grid-column: span 3
@@ -132,7 +133,7 @@
     &__dialog
       &--visible
         width: 420px
-        padding: 10px 23px
+        padding: 20px 23px
 @media ( max-width:768px)
   .container
     max-width: 576px
@@ -389,18 +390,24 @@
     &__pay
       grid-row: 2
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .packages
     &__infocard
       border-radius: 8px 8px 0px 8px
   .modal
     &__dialog
       &--visible
-        width: 75%
-        padding: 10px 23px
+        width: 90%
+        padding: 20px 23px
+    &__button
+      order: 1
     &__info
-      display: block
-      width: 100%
+      margin-top: 10px  
+    &__bottom
+      &-elements
+        flex-direction: column
+    
 @media ( max-width: 375px )
   .slider
     max-height: 179px
